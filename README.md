@@ -1,92 +1,24 @@
-# CalendarView
+# 青橙日历
 
 ### 功能
 * 1、支持农历、节气、常用节假日
-* 2、日期范围设置，默认支持的最大日期范围[1900.1~2049.12]
-* 3、默认选中日期设置
-* 4、单选、多选
-* 5、跳转到指定日期
-* 6、通过自定义属性定制日期外观，以及简单的日期item布局配置
+* 2、跳转到指定日期
+* 2、查看历史上的任意日期发生了那些大事
+* 2、查看老黄历信息
+* 5、通过自定义属性定制日期外观，以及简单的日期item布局配置
 
-#### [基本原理介绍](http://www.jianshu.com/p/304c8e70d0bd)    
-#### [demo下载](https://fir.im/vehj?release_id=59154975ca87a8790e00015b)
+#### [apk下载](https://www.coolapk.com/apk/166643)
 
 ### 效果图：
 
-![](https://github.com/Othershe/CalendarView/blob/master/screenshot/1.gif)
-![](https://github.com/Othershe/CalendarView/blob/master/screenshot/2.gif)
-![](https://github.com/Othershe/CalendarView/blob/master/screenshot/3.gif)
+![](https://github.com/ykh001/qingcheng-calendar/tree/master/screenshot/1.jpg)
+![](https://github.com/ykh001/qingcheng-calendar/tree/master/screenshot/2.jpg)
+![](https://github.com/ykh001/qingcheng-calendar/tree/master/screenshot/3.jpg)
+![](https://github.com/ykh001/qingcheng-calendar/tree/master/screenshot/4.jpg)
 
-### 基本用法：
-**Step 1. 添加JitPack仓库**
-在当前项目等根目录下的 `build.gradle` 文件中添加如下内容:
-``` gradle
-allprojects {
-    repositories {
-        ...
-        maven { url "https://jitpack.io" }
-    }
-}
-```
-**Step 2. 添加项目依赖**
-``` gradle
-dependencies {
-        compile 'com.github.Othershe:CalendarView:1.0.1'
-}
-```
-**Step 3. 在布局文件中添加WeekView、CalendarView**
-```java
-<com.othershe.calendarview.WeekView
-        android:layout_width="match_parent"
-        android:layout_height="35dp" />
-        
-<com.othershe.calendarview.CalendarView
-        android:id="@+id/calendar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-```
-**Step 4. 相关初始化**
-```java
-CalendarView calendarView = (CalendarView) findViewById(R.id.calendar);
-//日历init
-calendarView.init();
-//自定义日期ietm的布局样式
-calendarView.setOnCalendarViewAdapter(R.layout.item_layout, new CalendarViewAdapter() {
-            @Override
-            public TextView[] convertView(View view, DateBean date) {
-                TextView solarDay = (TextView) view.findViewById(R.id.solar_day);
-                TextView lunarDay = (TextView) view.findViewById(R.id.lunar_day);
-                return new TextView[]{solarDay, lunarDay};
-            }
-        });
-*注意：init()和setOnCalendarViewAdapter()不要同时使用
 
-//月份切换回调
-calendarView.setOnPagerChangeListener(new OnPagerChangeListener() {
-            @Override
-            public void onPagerChanged(int[] date) {
-                
-            }
-        });
-        
-//日期点击回调
-calendarView.setOnItemClickListener(new OnMonthItemClickListener() {
-            @Override
-            public void onMonthItemClick(View view, DateBean date) {
-                
-            }
-        });
-        
-//日期多选回调
-calendarView.setOnMonthItemChooseListener(new OnMonthItemChooseListener() {
-            @Override
-            public void onMonthItemChoose(View view, DateBean date, boolean flag) {
-               //flag=true代表选中数据，flag=false代表取消选中
-            }
-        });
-*注意：点击和多选操作不要同时使用
 
-```
+###CalendarView来自于网上的一个开源项目，该demo可以自定义诸多属性，因此copy
 ### CalendarView相关方法：
 |方法名|描述
 |---|---|
