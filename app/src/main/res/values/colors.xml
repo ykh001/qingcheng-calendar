@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlue">#ff0195ff</color>
+    <color name="colorRed">#cd3636</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#fff0f0f0</color>
+
+    <color name="blue_color">#FF03A9F4</color>
+    <color name="blue_color_light">#58b2f2</color>
+    <color name="colorPrimary_light_trsp" >#7b393a3f</color>
+    <color name="green1">#4CAF50</color>
+    <color name="green">#388E3C</color>
+    <color name="light">#C8E6C9</color>
+    <color name="orig">#FF9800</color>
+    <color name="dark">#212121</color>
+    <color name="green2">#757575</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="yellow"> #CDDC39</color>
+    <color name="gray2">#cccccc</color>
+    <color name="gray3">#999999</color>
+    <color name="accent_color">#FF22A4D4</color>
+    <color name="Indigo_colorPrimaryDark">#303f9f</color>
+    <color name="Indigo_colorPrimary">#3f51b5</color>
+    <color name="Indigo_nav_color">#4675FF</color>
+
+    <color name="primary">#E91E63</color>
+    <color name="primary_dark">#39000000</color>
+    <color name="primary_light">#F8BBD0</color>
+    <color name="accent">#8BC34A</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="yima">#FF0000</color>
+    <color name="jilao">#FF00FF</color>
+    <!--底部分享Dialog-->
+
+    <color name="touming">#00000000</color>
+    <!--滑动隐藏Activity-->
+</resources>

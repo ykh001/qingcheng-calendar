@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    xmlns:weekview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+
+    <LinearLayout  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorRed">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@mipmap/last"
+                android:onClick="lastMonth" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/dark"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="50dp"
+                android:background="@mipmap/next"
+                android:onClick="nextMonth" />
+
+        </RelativeLayout>
+
+        <com.ykh.calendarview.WeekView
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <com.ykh.calendarview.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            calendarview:date_end="2030.12"
+            calendarview:date_start="1990.1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/circle_bg_white"
+                android:gravity="center"
+                android:onClick="today"
+                android:text="回到今天"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/circle_bg_white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:onClick="someday"
+                android:text="@string/tiaozhuan"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <!--<TextView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:background="@drawable/circle_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="start"-->
+                <!--android:text="首月"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:background="@drawable/circle_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="end"-->
+                <!--android:text="末月"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@color/colorBlue"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="lastYear"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:text="上一年"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp"-->
+                <!--android:layout_weight="1" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@color/colorBlue"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:onClick="nextYear"-->
+                <!--android:text="下一年"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp"-->
+                <!--android:layout_weight="1" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:background="@drawable/circle_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="multiChoose"-->
+                <!--android:text="多选"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp" />-->
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/circle_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="today"-->
+                <!--android:text="回到今天"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/circle_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:onClick="someday"-->
+                <!--android:text="@string/tiaozhuan"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14sp" />-->
+        <!--</LinearLayout>-->
+        <!--<include-->
+            <!--android:id="@+id/qq"-->
+            <!--layout="@layout/almanac_layout"></include>-->
+
+
+        <TextView
+            android:id="@+id/almanactitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:paddingLeft="10sp"
+            android:onClick="almanac"
+            android:text="农历"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/colorWhite"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/calendar_display"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="left"
+            android:paddingLeft="10sp"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#fff0f0f0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:paddingLeft="10sp"
+            android:onClick="historyToday"
+            android:text="历史上的今天"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/colorWhite"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</ScrollView>

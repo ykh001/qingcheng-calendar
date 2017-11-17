@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">青橙日历</string>
+    <string name="tiaozhuan">跳转某天(1990--2030)</string>
+    <string name="gongli">公历:</string>
+
+
+    <string name="my_text">
+  <![CDATA[
+    <b>Autor:</b> Mr Nice Guy<br/>
+    <b>Contact:</b> myemail@grail.com<br/>
+    <i>Copyright © 2011-2012 Intergalactic Spacebar Confederation </i>
+  ]]>
+</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

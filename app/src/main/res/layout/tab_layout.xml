@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/historytoday_layout"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        app:theme="@style/Widget.Design.TabLayout"
+        app:tabSelectedTextColor="@color/colorRed"
+        app:tabBackground="@color/colorBlue"
+        app:tabTextColor="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabIndicatorHeight="1dp"
+        app:tabMode="fixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="历史上的今天"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="老黄历"/>
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

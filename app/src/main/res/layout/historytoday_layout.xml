@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/historytoday_layout"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleDate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:background="@color/colorBlue"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="20sp"
+        android:textColor="@color/colorWhite"
+        android:text="历史上的今天" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+</LinearLayout>

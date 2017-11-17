@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:background="@color/colorBlue"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="20sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tiaozhuan" />
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入年份"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入月份"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入日子"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+</LinearLayout>
