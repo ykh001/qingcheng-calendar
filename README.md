@@ -3,8 +3,8 @@
 ### 功能
 * 1、支持农历、节气、常用节假日
 * 2、跳转到指定日期
-* 2、查看历史上的任意日期发生了那些大事
-* 2、查看老黄历信息
+* 3、查看历史上的任意日期发生了那些大事
+* 4、查看老黄历信息
 * 5、通过自定义属性定制日期外观，以及简单的日期item布局配置
 
 #### [apk下载](https://www.coolapk.com/apk/166643)
@@ -12,9 +12,9 @@
 ### 效果图：
 
 ![image](https://github.com/ykh001/qingcheng-calendar/blob/master/screenshot/1.jpg)
-![image](https://github.com/ykh001/qingcheng-calendar/tree/master/screenshot/2.jpg)
-![image](https://github.com/ykh001/qingcheng-calendar/tree/master/screenshot/3.jpg)
-![image](https://github.com/ykh001/qingcheng-calendar/tree/master/screenshot/4.jpg)
+![image](https://github.com/ykh001/qingcheng-calendar/blob/master/screenshot/2.jpg)
+![image](https://github.com/ykh001/qingcheng-calendar/blob/master/screenshot/3.jpg)
+![image](https://github.com/ykh001/qingcheng-calendar/blob/master/screenshot/4.jpg)
 
 
 ###CalendarView来自于网上的一个开源项目，该demo可以自定义诸多属性，因此copy
